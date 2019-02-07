@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveExActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imc_logox"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/imc" />
+
+    <TextView
+        android:id="@+id/textViewx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="100dp"
+        android:elevation="16dp"
+        android:text="@string/reservtion"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/nameEditTextx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewx"
+        android:focusedByDefault="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/name"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/phoneNumEditTextx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nameEditTextx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="right"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/patiantPlainx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumEditTextx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_shape"
+            android:gravity="right"
+            android:hint="الشكوي الطبيه"
+            android:inputType="textMultiLine"
+            android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/sendButtonx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="87dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape"
+        android:text="@string/send" />
+
+    <Button
+        android:id="@+id/cancel_Buttonx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape"
+        android:text="@string/cancel" />
+
+
+</RelativeLayout>

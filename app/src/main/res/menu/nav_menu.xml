@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/contactUs"
+        android:icon="@drawable/ic_support"
+        android:title="تواصل بنا">
+
+    </item>
+    <item android:id="@+id/clinic"
+        android:title="العيادات"
+        android:icon="@drawable/ic_hospital">
+    </item>
+    <item android:id="@+id/expert"
+        android:title="الخبراء"
+        android:icon="@drawable/ic_scientist">
+    </item>
+
+
+   <!-- <item android:id="@+id/about"
+        android:title="تفاصيل"
+
+       android:icon="@drawable/ic_iconfinder_infomation_3592654">
+    </item>-->
+
+</menu>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bl2"
+    tools:context=".ExpertDetails"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/expertCardView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+
+        android:background="@drawable/expert_detail_card_background"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="false">
+
+
+        <ImageView
+            android:id="@+id/imc_logo"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/imc" />
+
+        <TextView
+            android:id="@+id/expert_name"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:text="@string/expert_details_name_demo"
+
+            android:textSize="16sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/expert_nationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expert_detail_nationality_demo"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/nationality"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="45dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/expert_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_expert"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/date_expert_demo"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/specContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/general_spect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generalSpec"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/genralSpecDemo"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/special_spect_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="@null"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:text="@string/specialSpecDemo"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/specialSpecd"
+                android:textSize="13dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reserveExpertButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="180dp"
+
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/reservebuttonshape"
+            android:gravity="center"
+            android:text="@string/reserveDemoButton"
+            android:textColor="#fff"
+
+            android:textSize="13dp" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

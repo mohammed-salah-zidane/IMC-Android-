@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lorasoftware.mohamed_salah_zidane.imchelperdates1.Reservation">
+
+    <ImageView
+        android:id="@+id/imc_logo"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/imc" />
+
+    <TextView
+        android:id="@+id/textViewd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="100dp"
+        android:elevation="16dp"
+        android:text="@string/reservtion"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/nameEditTextd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewd"
+        android:focusedByDefault="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="start"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/name"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/phoneNumEditTextd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nameEditTextd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="right"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/patiantPlaind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumEditTextd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="right"
+        android:hint="الشكوي الطبيه"
+        android:inputType="textMultiLine"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/cancel_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape"
+        android:elevation="30dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/cancel_Button"
+        android:layout_alignStart="@+id/cancel_Button"
+        android:layout_alignLeft="@+id/cancel_Button"
+        android:layout_marginBottom="11dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttonshape"
+        android:elevation="30dp"
+        android:text="@string/send" />
+
+</RelativeLayout>
